@@ -4,15 +4,15 @@ title: eblog test
 ---
 
 <!-- People -->
-{% assign test1 = site.data.test1 %}
-{% assign test1 = test1 | sort:"Name" %}
+{% assign tests = site.data.testing %}
+{% assign tests = tests | sort:"Name" %}
 
 <!-- Document -->
 
-{% for test in test1 %}
+{% for tests in testing %}
 
 <ul>
-<li><strong>{{ test.Name }}</strong> ({{ test.Date }}, {{ test.Notes }})</li>
+<li><strong>{{ tests.Name }}</strong> ({{ tests.Date }}, {{ tests.Notes }})</li>
 </ul>
 
 {% endfor %}
