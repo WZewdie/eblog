@@ -1,12 +1,12 @@
-- 'Name ': John Doe
+- Name: John Doe
   Date: '2020'
   Notes: this is a test name
-- 'Name ': Jane Doe
+- Name: Jane Doe
   Date: '2020'
   Notes: Second test name
-- 'Name ': Abebe Abebe
+- Name: Abebe Abebe
   Date: '2020'
   Notes: Third test
-- 'Name ': This
+- Name: This
   Date: 05/20/2020
   Notes: 'Another one '
