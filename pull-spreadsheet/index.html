@@ -1,0 +1,38 @@
+---
+layout: default
+title: Update Spreadsheet
+---
+
+<!--These are JavaScript Libraries-->
+<script type="text/javascript" src="https://hack-education-data.github.io/master/js/jquery-latest.min.js"></script>
+<script type="text/javascript" src="https://hack-education-data.github.io/master/js/utility.js"></script>
+<script type="text/javascript" src="https://hack-education-data.github.io/master/js/cookies.js"></script>
+<script type="text/javascript" src="https://hack-education-data.github.io/master/js/tabletop.js"></script>
+<script type="text/javascript" src="https://hack-education-data.github.io/master/js/js-yaml.min.js"></script>
+<script type="text/javascript" src="https://hack-education-data.github.io/master/js/github.js"></script>
+
+<h1>Update </h1>
+<script type="text/javascript">
+
+    // Reset the cookie manually
+    //Cookies.expire('token');
+
+    // URL: https://[user/org].github.io/[repo]/pull-spreadsheet/?key=your_key&worksheet=worksheet_name&token=your_personal_access_token&org=your_org&repo=your_repo&branch=your_branch
+
+    // Incoming Variables append
+    var $key = getUrlVar('key');
+    var $resource = getUrlVar('worksheet');
+    var $oAuthToken = getUrlVar('token');
+    var $org = getUrlVar('org');
+    var $repo = getUrlVar('repo');
+    var $branch = getUrlVar('branch');
+
+    var $yaml_store = "";
+
+    if($oAuthToken !='')
+      {
+      // Setting a cookie value
+      Cookies.set('token', $oAuthToken);
+      // Set with expiration
+      // Cookies.set('token', $oAuthToken, { expires: '01/01/2017' });
+      }

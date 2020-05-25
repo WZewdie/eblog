@@ -1,0 +1,18 @@
+---
+layout: default
+title: eblog test
+---
+
+<!-- People -->
+{% assign test1 = site.data.test1 %}
+{% assign test1 = test1 | sort:"Name" %}
+
+<!-- Document -->
+
+{% for test in test1 %}
+
+<ul>
+<li><strong>{{ test.Name }}</strong> ({{ test.Date }}, {{ test.Notes }})</li>
+</ul>
+
+{% endfor %}
