@@ -34,9 +34,4 @@ plugins:
 paginate: 8
 paginate_path: "/page/:num"
 
-integration_spreadsheet_key: 1GqInEgZOLG1iSGv_x4cUQsu2JeSvPZh3sbBGs86-7n4
-
-github_user: WZewdie
-github_repo: eblog
-
 exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
